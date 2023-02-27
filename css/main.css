@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 
+    Red Hat Display -  Main font
+    Arial - Fallback font 
+  */
+  font-family: "Red Hat Display", "Arial", sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-block-size: 100vh;
+}
+
+:root {
+  /* Colors */
+
+  --bgk--card: hsl(225, 100%, 98%);
+  --bgk--main: hsl(225, 100%, 94%);
+  --clr--body: hsl(224, 23%, 55%);
+  --clr--link: hsl(245, 75%, 52%);
+  --clr--black: hsl(223, 47%, 23%);
+
+  /* Font Sizes */
+
+  /* 14.00px → 16.00px */
+  --body: clamp(0.88rem, calc(0.83rem + 0.19vw), 1rem);
+  /* 18.00px → 24.00px */
+  --headline: clamp(1.13rem, calc(0.99rem + 0.56vw), 1.5rem);
+
+  /* Font Styles */
+
+  --medium: 500;
+  --bold: 700;
+  --black: 900;
+}
